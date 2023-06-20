@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceRoot}/out.elf",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}"
+            //"cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/home/celina/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
+            "miDebuggerArgs": "${workspaceRoot}/out.elf",
+            "miDebuggerServerAddress": "192.168.10.21:3333",
+            "useExtendedRemote": true,
+        }
+    ]
+}

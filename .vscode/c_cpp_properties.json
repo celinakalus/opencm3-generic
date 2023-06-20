@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceFolder}/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/**",
+                "${workspaceFolder}/STM32CubeF4/Drivers/CMSIS/**",
+                "${workspaceFolder}/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/**"
+            ],
+            "defines": [],
+            "compilerPath": "${home}/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm",
+            "configurationProvider": "ms-vscode.makefile-tools",
+            "compilerArgs": [
+                "-DSTM32F411xE",
+                "-mcpu=cortex-m4",
+                "-mthumb",
+                "-nostdlib"
+            ]
+        }
+    ],
+    "version": 4
+}
