@@ -1,10 +1,11 @@
+#include <libopencm3/stm32/rcc.h>
+#include <libopencm3/stm32/gpio.h>
+
 int main(void) {
-	int a = 1;
-	int b = 1;
+	rcc_periph_clock_enable(RCC_GPIOC);
+	gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO13);
 
 	while (1) {
-		int tmp = a;
-		a = a + b;
-		b = tmp;
+		gpio_toggle(GPIOC, GPIO13);
 	}
 }

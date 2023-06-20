@@ -3,9 +3,8 @@
         {
             "name": "STM32",
             "includePath": [
-                "${workspaceFolder}/STM32CubeF4/Drivers/CMSIS/Device/ST/STM32F4xx/**",
-                "${workspaceFolder}/STM32CubeF4/Drivers/CMSIS/**",
-                "${workspaceFolder}/STM32CubeF4/Drivers/STM32F4xx_HAL_Driver/**"
+                "/home/celina/src/libopencm3/include",
+                "/home/celina/opt/gcc-arm-none-eabi/arm-none-eabi/include"
             ],
             "defines": [],
             "compilerPath": "${home}/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc",
